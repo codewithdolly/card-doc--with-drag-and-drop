@@ -1,42 +1,42 @@
 import React, { useState, useEffect } from 'react';
-// import documentsData from './data/documents.json';
+import documentsData from './data/documents.json';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import Card from './components/cards/cards';
 import Overlay from './components/overlay/overlay';
 import "./App.css";
 
-const documentsData = [
-    {
-        "type": "bank-draft",
-        "title": "Bank Draft",
-        "position": 0,
-        "thumbnail": "../Images/cat1.png"  // Adjusted the path here
-    },
-    {
-        "type": "bill-of-lading",
-        "title": "Bill of Lading",
-        "position": 1,
-        "thumbnail": "../Images/cat2.png"  // Adjusted the path here
-    },
-    {
-        "type": "invoice",
-        "title": "Invoice",
-        "position": 2,
-        "thumbnail": "../Images/cat3.png"  // Adjusted the path here
-    },
-    {
-        "type": "bank-draft-2",
-        "title": "Bank Draft 2",
-        "position": 3,
-        "thumbnail": "../Images/cat2.png"  // Adjusted the path here
-    },
-    {
-        "type": "bill-of-lading-2",
-        "title": "Bill of Lading 2",
-        "position": 4,
-        "thumbnail": "../Images/cat1.png"  // Adjusted the path here
-    }
-];
+// const documentsData = [
+//     {
+//         "type": "bank-draft",
+//         "title": "Bank Draft",
+//         "position": 0,
+//         "thumbnail": "../Images/cat1.png" 
+//     },
+//     {
+//         "type": "bill-of-lading",
+//         "title": "Bill of Lading",
+//         "position": 1,
+//         "thumbnail": "../Images/cat2.png"  
+//     },
+//     {
+//         "type": "invoice",
+//         "title": "Invoice",
+//         "position": 2,
+//         "thumbnail": "../Images/cat3.png"  
+//     },
+//     {
+//         "type": "bank-draft-2",
+//         "title": "Bank Draft 2",
+//         "position": 3,
+//         "thumbnail": "../Images/cat2.png"  
+//     },
+//     {
+//         "type": "bill-of-lading-2",
+//         "title": "Bill of Lading 2",
+//         "position": 4,
+//         "thumbnail": "../Images/cat1.png"  
+//     }
+// ];
 
 
 function App() {
